@@ -12,4 +12,4 @@ set mouse=nv
 set signcolumn=yes:1
 
 set colorcolumn=101,121
-colorscheme gruvbox
+colorscheme base16-bright

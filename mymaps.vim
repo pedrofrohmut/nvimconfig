@@ -19,7 +19,7 @@ nnoremap <F4> :bufdo bd
 nnoremap <silent> <F5> :wa<CR>
 nnoremap <F6> :CocSearch<Space>
 nnoremap <F8> :set fileformat=unix<CR>
-nnoremap <F12> :source ~/.vimrc<CR>
+nnoremap <F12> :source ~/.config/nvim/init.vim<CR>
 
 " Closing Characters on enter (CR)
 inoremap (<CR> (<CR>)<Esc>ko
