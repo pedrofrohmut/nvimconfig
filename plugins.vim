@@ -37,10 +37,11 @@ Plug 'ctrlpvim/ctrlp.vim'
 " NERDTree - File Tree Manager and Viewer
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 
-" Lots of good Colorschemes for Vim
-Plug 'chriskempson/base16-vim'
-
 " Color Scheme
 Plug 'morhetz/gruvbox'
+Plug 'rakr/vim-one'
+Plug 'sjl/badwolf'
+Plug 'mhartington/oceanic-next'
+Plug 'kyoz/purify', { 'rtp': 'vim' }
 
 call plug#end()
