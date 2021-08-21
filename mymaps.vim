@@ -50,9 +50,6 @@ nnoremap <silent> <C-T><C-L> :+tabmove<CR>
 nnoremap <silent> <C-L> :tabnext<CR>
 nnoremap <silent> <C-H> :tabprevious<CR>
 
-" # Go To - Tab Index
-nnoremap <silent> <C-N> :tabs<CR>:tabnext
-
 "" ### WINDOW ############################################################
 "" Resize Horizontal
 nnoremap <silent> <Right> :resize +5<CR>

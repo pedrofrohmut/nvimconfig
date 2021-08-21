@@ -10,6 +10,7 @@ set fileformat=unix
 set cmdheight=1
 set mouse=nv
 set signcolumn=yes:1
+set nohlsearch
 
 set colorcolumn=101,121
-colorscheme purify
+colorscheme OceanicNext
