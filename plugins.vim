@@ -35,7 +35,7 @@ Plug 'editorconfig/editorconfig-vim'
 Plug 'ctrlpvim/ctrlp.vim'
 
 " NERDTree - File Tree Manager and Viewer
-Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree'
 
 " Color Scheme
 Plug 'morhetz/gruvbox'

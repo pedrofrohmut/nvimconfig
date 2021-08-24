@@ -1,6 +1,6 @@
 call GuiWindowFullScreen(1)
 
-GuiFont JetBrainsMono Nerd Font Mono:h12
+GuiFont JetBrainsMono Nerd Font Mono:h11
 
 nmap <S-Insert> "+p
 
