@@ -37,6 +37,10 @@ Plug 'ctrlpvim/ctrlp.vim'
 " NERDTree - File Tree Manager and Viewer
 Plug 'scrooloose/nerdtree'
 
+" Git
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+
 " Color Scheme
 Plug 'morhetz/gruvbox'
 Plug 'rakr/vim-one'
