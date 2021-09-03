@@ -10,8 +10,8 @@ inoremap <C-L> <Del>
 inoremap <C-BS> <C-W>
 
 " Insert Line in Normal_Mode or use Ctrl-M
-nnoremap <S-Enter> O<Esc>j
-nnoremap <C-Enter> o<Esc>k
+nnoremap <S-Enter> I<CR><Esc>
+nnoremap <C-Enter> A <CR><Esc>k
 nnoremap <Enter> i<CR><Esc>
 
 " Utils

@@ -1,5 +1,7 @@
 filetype indent plugin on
 
+set number
+set relativenumber
 set autoindent
 set expandtab
 set shiftwidth=2
