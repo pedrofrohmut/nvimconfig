@@ -15,6 +15,7 @@ nnoremap <C-Enter> A <CR><Esc>k
 nnoremap <Enter> i<CR><Esc>
 
 " Utils
+nnoremap <silent> <F3> :Goyo<CR>
 nnoremap <F4> :bufdo bd
 nnoremap <silent> <F5> :wa<CR>
 nnoremap <F6> :CocSearch<Space>

@@ -48,4 +48,7 @@ Plug 'sjl/badwolf'
 Plug 'mhartington/oceanic-next'
 Plug 'kyoz/purify', { 'rtp': 'vim' }
 
+" Goyo
+Plug 'junegunn/goyo.vim'
+
 call plug#end()
