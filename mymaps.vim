@@ -55,5 +55,5 @@ nnoremap <silent> <C-H> :tabprevious<CR>
 "" Resize Horizontal
 nnoremap <silent> <Right> :resize +5<CR>
 nnoremap <silent> <Left> :resize -5<CR>
-nnoremap <silent> <Up> :vertical resize -5<CR>
-nnoremap <silent> <Down> :vertical resize +5<CR>
+nnoremap <silent> <Down> :vertical resize -5<CR>
+nnoremap <silent> <Up> :vertical resize +5<CR>
