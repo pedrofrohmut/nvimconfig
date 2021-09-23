@@ -16,6 +16,11 @@ set nohlsearch
 set colorcolumn=101,121
 
 colorscheme OceanicNext
+" Transparency
+hi Normal guibg=NONE ctermbg=NONE
+hi LineNr guibg=NONE ctermbg=NONE
+hi SignColumn guibg=NONE ctermbg=NONE
+hi EndOfBuffer guibg=NONE ctermbg=NONE
 
 " Remove auto insert comments next line
 autocmd FileType * setlocal formatoptions-=cro
