@@ -17,9 +17,9 @@ nnoremap <Enter> i<CR><Esc>
 " Utils
 nnoremap <silent> <F3> :Goyo<CR>
 nnoremap <F4> :bufdo bd
-nnoremap <silent> <F5> :wa<CR>
+nnoremap <F5> :CocRestart<CR>
 nnoremap <F6> :CocSearch<Space>
-nnoremap <F8> :set fileformat=unix<CR>
+nnoremap <silent> <F8> :wa<CR>
 nnoremap <F12> :source ~/.config/nvim/init.vim<CR>
 
 " Closing Characters on enter (CR)
