@@ -12,6 +12,9 @@ Plug 'maxmellon/vim-jsx-pretty'
 " Elixir Syntax Highlight/Indentation
 Plug 'elixir-editors/vim-elixir'
 
+" Svelte Syntax Highlight/Indentation
+Plug 'leafOfTree/vim-svelte-plugin'
+
 " Surrounder for Simple Stuff
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
