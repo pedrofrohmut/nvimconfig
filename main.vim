@@ -16,3 +16,5 @@ source ~/programming/nvimconfig/emmet.vim
 source ~/programming/nvimconfig/nerd.vim
 " Vim Sneak
 source ~/programming/nvimconfig/sneak.vim
+" Svelte
+source ~/programming/nvimconfig/svelte.vim
