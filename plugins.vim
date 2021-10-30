@@ -15,8 +15,19 @@ Plug 'elixir-editors/vim-elixir'
 " Svelte Syntax Highlight/Indentation
 Plug 'leafOfTree/vim-svelte-plugin'
 
+" Python Syntax Highlight/Indentation
+Plug 'hdima/python-syntax'
+
+" Syntax and Style checker for Python
+Plug 'nvie/vim-flake8'
+
+" Jinja (Python/HTML) Syntax Highlight
+Plug 'glench/vim-jinja2-syntax'
+
 " Surrounder for Simple Stuff
 Plug 'tpope/vim-surround'
+
+" Dot command now works with some plugins too
 Plug 'tpope/vim-repeat'
 
 " Commenter
@@ -31,6 +42,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Emmet - HTML JSX snippets
 Plug 'mattn/emmet-vim'
 
+" Auto close HTML tags
+Plug 'alvan/vim-closetag'
+
 " EditorConfig
 Plug 'editorconfig/editorconfig-vim'
 
@@ -41,17 +55,17 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 
 " Git
-Plug 'tpope/vim-fugitive'
+" Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
-" Color Scheme
-Plug 'morhetz/gruvbox'
-Plug 'rakr/vim-one'
-Plug 'sjl/badwolf'
+" Color Schemes
 Plug 'mhartington/oceanic-next'
-Plug 'kyoz/purify', { 'rtp': 'vim' }
+" Plug 'morhetz/gruvbox'
+" Plug 'rakr/vim-one'
+" Plug 'sjl/badwolf'
+" Plug 'kyoz/purify', { 'rtp': 'vim' }
 
 " Goyo
-Plug 'junegunn/goyo.vim'
+" Plug 'junegunn/goyo.vim'
 
 call plug#end()

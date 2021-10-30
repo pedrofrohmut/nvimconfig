@@ -18,3 +18,5 @@ source ~/programming/nvimconfig/nerd.vim
 source ~/programming/nvimconfig/sneak.vim
 " Svelte
 source ~/programming/nvimconfig/svelte.vim
+" Flake8
+source ~/programming/nvimconfig/flake8.vim

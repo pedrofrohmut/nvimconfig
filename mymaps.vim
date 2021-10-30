@@ -15,11 +15,11 @@ nnoremap <C-Enter> A <CR><Esc>k
 nnoremap <Enter> i<CR><Esc>
 
 " Utils
-nnoremap <silent> <F3> :Goyo<CR>
 nnoremap <F4> :bufdo bd
 nnoremap <F5> :CocRestart<CR>
 nnoremap <F6> :CocSearch<Space>
 nnoremap <silent> <F8> :wa<CR>
+nnoremap <F11> :%s/\s\+$//g
 nnoremap <F12> :source ~/.config/nvim/init.vim<CR>
 
 " Closing Characters on enter (CR)

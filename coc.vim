@@ -65,7 +65,7 @@ endif
 imap <silent><expr> <c-space> coc#refresh()
 
 " Apply AutoFix to problem on the current line.
-nmap <leader>f <Plug>(coc-fix-current)
+nmap <leader>qf <Plug>(coc-fix-current)
 
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
@@ -97,5 +97,10 @@ vmap <silent><nowait> <leader>a :CocAction<CR>
 nmap <leader>h <Plug>(coc-float-hide)
 
 " Format
+command! -nargs=0 Format :call CocAction('format')
 nmap <F7> <Plug>(coc-format)
-"command! -nargs=0 Format :call CocAction('format')
+
+" Prettier Format
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+vmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
