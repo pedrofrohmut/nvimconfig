@@ -15,9 +15,6 @@ Plug 'elixir-editors/vim-elixir'
 " Svelte Syntax Highlight/Indentation
 Plug 'leafOfTree/vim-svelte-plugin'
 
-" Python Syntax Highlight/Indentation
-Plug 'hdima/python-syntax'
-
 " Syntax and Style checker for Python
 Plug 'nvie/vim-flake8'
 
@@ -55,17 +52,12 @@ Plug 'ctrlpvim/ctrlp.vim'
 Plug 'scrooloose/nerdtree'
 
 " Git
-" Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
 " Color Schemes
 Plug 'mhartington/oceanic-next'
-" Plug 'morhetz/gruvbox'
-" Plug 'rakr/vim-one'
-" Plug 'sjl/badwolf'
-" Plug 'kyoz/purify', { 'rtp': 'vim' }
 
 " Goyo
-" Plug 'junegunn/goyo.vim'
+Plug 'junegunn/goyo.vim'
 
 call plug#end()
