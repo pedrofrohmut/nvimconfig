@@ -1,22 +1,26 @@
+let $config_path = '/home/pedro/programming/nvimconfig'
+
 " Vim Plug - Plugins List
-source ~/programming/nvimconfig/plugins.vim
+source $config_path/plugins.vim
 
 " Flake8
-source ~/programming/nvimconfig/flake8.vim
+source $config_path/flake8.vim
 " Coc Neovim - Configs and Maps
-source ~/programming/nvimconfig/coc.vim
+source $config_path/coc.vim
 " CtrlP
-source ~/programming/nvimconfig/ctrlp.vim
+source $config_path/ctrlp.vim
 " Emmet
-source ~/programming/nvimconfig/emmet.vim
+source $config_path/emmet.vim
 " NERDTree
-source ~/programming/nvimconfig/nerd.vim
+source $config_path/nerd.vim
 " Vim Sneak
-source ~/programming/nvimconfig/sneak.vim
+source $config_path/sneak.vim
 " Svelte
-source ~/programming/nvimconfig/svelte.vim
+source $config_path/svelte.vim
+" Jinja
+source $config_path/jinja.vim
 
 " NeoVim Config
-source ~/programming/nvimconfig/config.vim
+source $config_path/config.vim
 " MyMaps For NeoVim
-source ~/programming/nvimconfig/mymaps.vim
+source $config_path/mymaps.vim
