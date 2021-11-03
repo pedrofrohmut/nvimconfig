@@ -30,12 +30,12 @@ inoremap ({<CR> ({<CR>})<Esc>ko
 inoremap `<CR> `<CR>`<Esc>ko<Tab>
 inoremap (`<CR> (``)<Esc>hi<CR><Esc>ko<Tab>
 
-"" ### BUFFERS ############################################################
+" ### BUFFERS ############################################################
 nnoremap <C-B> :ls<CR>:b<Space>
 nnoremap <silent> <F9> :bp<CR>
 nnoremap <silent> <F10> :bn<CR>
 
-"" ### TABS ###############################################################
+" ### TABS ###############################################################
 " # New Tab
 nnoremap <silent> <C-T><C-N> :tabnew<CR>
 "
@@ -51,9 +51,13 @@ nnoremap <silent> <C-T><C-L> :+tabmove<CR>
 nnoremap <silent> <C-L> :tabnext<CR>
 nnoremap <silent> <C-H> :tabprevious<CR>
 
-"" ### WINDOW ############################################################
-"" Resize Horizontal
+" ### WINDOWS ############################################################
+" Resize Horizontal
 nnoremap <silent> <Right> :resize +5<CR>
 nnoremap <silent> <Left> :resize -5<CR>
 nnoremap <silent> <Down> :vertical resize -5<CR>
 nnoremap <silent> <Up> :vertical resize +5<CR>
+
+nnoremap <C-J> <C-W>w
+nunmap <C-K>
+nnoremap <C-K> <C-W>W

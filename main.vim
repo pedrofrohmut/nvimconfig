@@ -1,11 +1,8 @@
 " Vim Plug - Plugins List
 source ~/programming/nvimconfig/plugins.vim
 
-" NeoVim Config
-source ~/programming/nvimconfig/config.vim
-" MyMaps For NeoVim
-source ~/programming/nvimconfig/mymaps.vim
-
+" Flake8
+source ~/programming/nvimconfig/flake8.vim
 " Coc Neovim - Configs and Maps
 source ~/programming/nvimconfig/coc.vim
 " CtrlP
@@ -18,5 +15,8 @@ source ~/programming/nvimconfig/nerd.vim
 source ~/programming/nvimconfig/sneak.vim
 " Svelte
 source ~/programming/nvimconfig/svelte.vim
-" Flake8
-source ~/programming/nvimconfig/flake8.vim
+
+" NeoVim Config
+source ~/programming/nvimconfig/config.vim
+" MyMaps For NeoVim
+source ~/programming/nvimconfig/mymaps.vim
