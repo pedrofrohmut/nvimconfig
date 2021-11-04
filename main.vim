@@ -17,8 +17,6 @@ source $config_path/nerd.vim
 source $config_path/sneak.vim
 " Svelte
 source $config_path/svelte.vim
-" Jinja
-source $config_path/jinja.vim
 
 " NeoVim Config
 source $config_path/config.vim
