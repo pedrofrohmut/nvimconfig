@@ -97,8 +97,8 @@ vmap <silent><nowait> <leader>a :CocAction<CR>
 nmap <leader>h <Plug>(coc-float-hide)
 
 " Format
+" '<Plug>(coc-format)' keybind set at mymaps.vim
 command! -nargs=0 Format :call CocAction('format')
-nmap <F7> <Plug>(coc-format)
 
 " Prettier Format
 command! -nargs=0 Prettier :CocCommand prettier.formatFile

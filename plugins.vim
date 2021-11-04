@@ -19,7 +19,7 @@ Plug 'leafOfTree/vim-svelte-plugin'
 Plug 'nvie/vim-flake8'
 
 " Jinja (Python/HTML) Syntax Highlight
-Plug 'glench/vim-jinja2-syntax'
+"Plug 'glench/vim-jinja2-syntax'
 
 " Surrounder for Simple Stuff
 Plug 'tpope/vim-surround'
@@ -50,6 +50,9 @@ Plug 'ctrlpvim/ctrlp.vim'
 
 " NERDTree - File Tree Manager and Viewer
 Plug 'scrooloose/nerdtree'
+
+" Tagbar
+Plug 'preservim/tagbar'
 
 " Git
 Plug 'airblade/vim-gitgutter'
