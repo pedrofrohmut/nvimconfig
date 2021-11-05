@@ -3,6 +3,9 @@ let $config_path = '/home/pedro/programming/nvimconfig'
 " Vim Plug - Plugins List
 source $config_path/plugins.vim
 
+" NeoVim Config
+source $config_path/config.vim
+
 " Flake8
 source $config_path/flake8.vim
 " Coc Neovim - Configs and Maps
@@ -18,7 +21,5 @@ source $config_path/sneak.vim
 " Svelte
 source $config_path/svelte.vim
 
-" NeoVim Config
-source $config_path/config.vim
 " MyMaps For NeoVim
 source $config_path/mymaps.vim

@@ -1,8 +1,3 @@
-" Leader key to space & clean up keybind conflicts
-let mapleader="\<Space>"
-nnoremap <Space> <Nop>
-map <Space> <Leader>
-
 " Closer Del
 inoremap <C-L> <Del>
 

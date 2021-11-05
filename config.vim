@@ -25,3 +25,8 @@ hi EndOfBuffer guibg=NONE ctermbg=NONE
 
 " Remove auto insert comments next line
 autocmd FileType * setlocal formatoptions-=cro
+
+" Leader key to space & clean up keybind conflicts
+let mapleader="\<Space>"
+" nnoremap <Space> <Nop>
+" map <Space> <Leader>
