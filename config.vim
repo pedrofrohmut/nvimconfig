@@ -13,7 +13,7 @@ set cmdheight=1
 set mouse=nv
 set signcolumn=yes:1
 set nohlsearch
-set colorcolumn=101,121
+set colorcolumn=81,121
 set nowrap
 
 colorscheme OceanicNext
