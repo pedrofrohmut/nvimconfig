@@ -26,6 +26,10 @@ inoremap ({<CR> ({<CR>})<Esc>ko
 inoremap `<CR> `<CR>`<Esc>ko<Tab>
 inoremap (`<CR> (``)<Esc>hi<CR><Esc>ko<Tab>
 
+" Scrolling set to 3 lines instead of 1
+nnoremap <C-E> <C-E><C-E><C-E>
+nnoremap <C-Y> <C-Y><C-Y><C-Y>
+
 " ### BUFFERS ############################################################
 
 " List buffers
