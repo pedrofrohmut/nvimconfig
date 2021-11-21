@@ -104,3 +104,11 @@ command! -nargs=0 Format :call CocAction('format')
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 vmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
+
+"" Extensions List #############################################################
+"" - just a list of the extensions choose for future consulting
+"" - Command to list :CocList extensions
+"" 1. coc-html
+"" 2. coc-css
+"" 3. coc-pyright
+"" 4. coc-prettier
