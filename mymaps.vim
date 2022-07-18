@@ -59,6 +59,6 @@ nnoremap <silent> <Down> :vertical resize -5<CR>
 nnoremap <silent> <Up> :vertical resize +5<CR>
 
 " Jump to Window Next/Prev
-nnoremap <C-J> <C-W>w
-nunmap <C-K>
-nnoremap <C-K> <C-W>W
+"nnoremap <C-J> <C-W>w
+"nunmap <C-K>
+"nnoremap <C-K> <C-W>W

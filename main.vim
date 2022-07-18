@@ -8,6 +8,8 @@ source $config_path/config.vim
 
 " Flake8
 source $config_path/flake8.vim
+" CloseTag
+source $config_path/closetag.vim
 " Coc Neovim - Configs and Maps
 source $config_path/coc.vim
 " CtrlP
