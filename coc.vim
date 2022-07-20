@@ -64,6 +64,8 @@ endif
 " Use <c-space> to trigger completion.
 imap <silent><expr> <c-space> coc#refresh()
 
+" Remap keys for applying codeAction to the current buffer.
+nmap <leader>a  <Plug>(coc-codeaction)
 " Apply AutoFix to problem on the current line.
 nmap <leader>qf <Plug>(coc-fix-current)
 
@@ -89,10 +91,6 @@ nmap <silent><nowait> <leader>d :<C-u>CocList diagnostics<CR>
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
-" CocAction
-nmap <silent><nowait> <leader>a :CocAction<CR>
-vmap <silent><nowait> <leader>a :CocAction<CR>
-
 " Hide Popups
 nmap <leader>h <Plug>(coc-float-hide)
 
@@ -110,5 +108,7 @@ nmap <leader>f  <Plug>(coc-format-selected)
 "" - Command to list :CocList extensions
 "" 1. coc-html
 "" 2. coc-css
-"" 3. coc-pyright
-"" 4. coc-prettier
+"" 3. coc-prettier
+"" 4. coc-pyright
+"" 5. coc-eslint
+"" 6. coc-tsserver
