@@ -69,6 +69,9 @@ nmap <leader>a  <Plug>(coc-codeaction)
 " Apply AutoFix to problem on the current line.
 nmap <leader>qf <Plug>(coc-fix-current)
 
+" Run the Code Lens action on the current line.
+nmap <leader>cl  <Plug>(coc-codelens-action)
+
 " Symbol renaming.
 nmap <leader>rn <Plug>(coc-rename)
 " CocRefactor
@@ -96,7 +99,7 @@ nmap <leader>h <Plug>(coc-float-hide)
 
 " Format
 " '<Plug>(coc-format)' keybind set at mymaps.vim
-command! -nargs=0 Format :call CocAction('format')
+command! -nargs=0 Format :call CocActionAsync('format')
 
 " Prettier Format
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
