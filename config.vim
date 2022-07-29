@@ -16,7 +16,11 @@ set nohlsearch
 set colorcolumn=81,121
 set nowrap
 
-colorscheme OceanicNext
+"colorscheme OceanicNext
+"colorscheme tokyonight
+"colorscheme minimalist
+colorscheme tender
+
 " Transparency
 hi Normal guibg=NONE ctermbg=NONE
 hi LineNr guibg=NONE ctermbg=NONE

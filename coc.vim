@@ -115,3 +115,5 @@ nmap <leader>f  <Plug>(coc-format-selected)
 "" 4. coc-pyright
 "" 5. coc-eslint
 "" 6. coc-tsserver
+"" 7. coc-vetur
+"" 8. coc-tailwindcss

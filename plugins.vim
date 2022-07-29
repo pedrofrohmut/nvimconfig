@@ -15,6 +15,9 @@ Plug 'elixir-editors/vim-elixir'
 " Svelte Syntax Highlight/Indentation
 Plug 'leafOfTree/vim-svelte-plugin'
 
+" Vue Syntax Highlight
+Plug 'posva/vim-vue'
+
 " Syntax and Style checker for Python
 Plug 'nvie/vim-flake8'
 
@@ -59,6 +62,8 @@ Plug 'airblade/vim-gitgutter'
 
 " Color Schemes
 Plug 'mhartington/oceanic-next'
+Plug 'jacoborus/tender.vim'
+Plug 'dikiaap/minimalist'
 
 " Goyo
 Plug 'junegunn/goyo.vim'
