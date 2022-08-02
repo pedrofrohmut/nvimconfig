@@ -3,6 +3,8 @@ inoremap <C-L> <Del>
 
 " Insert Line in Normal_Mode or use Ctrl-M
 nnoremap <Enter> i<CR><Esc>
+nnoremap <C-J> o<Esc>k
+nnoremap <C-K> O<Esc>j
 
 " Function Utils
 nnoremap <F4> :bufdo bd

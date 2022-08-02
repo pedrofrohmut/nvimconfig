@@ -10,7 +10,7 @@ let g:flake8_show_in_gutter=0
 let g:flake8_show_in_file=0
 
 " add binding to call the function
-nnoremap <C-K> :call flake8#Flake8ShowError()<cr>
+nnoremap <F2> :call flake8#Flake8ShowError()<cr>
 
 " Run Flake8 when writing a python buffer
 "autocmd BufWritePost *.py call flake8#Flake8()

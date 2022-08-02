@@ -1,5 +1,5 @@
 " These are the file extensions where this plugin is enabled.
-let g:closetag_filenames = "*.html,*.xhtml,*.jsx,*.vue"
+let g:closetag_filenames = "*.html,*.xhtml,*.jsx"
 
 " This will make the list of non-closing tags self-closing in the specified files.
 let g:closetag_xhtml_filenames = '*.xhtml,*.jsx'
