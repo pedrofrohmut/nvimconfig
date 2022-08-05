@@ -15,6 +15,7 @@ set signcolumn=yes:1
 set nohlsearch
 set colorcolumn=81,121
 set nowrap
+set scrolloff=8
 
 "colorscheme OceanicNext
 "colorscheme tokyonight

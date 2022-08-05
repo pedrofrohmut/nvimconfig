@@ -4,4 +4,4 @@ let NERDTreeIgnore = ['^node_modules$', '^deps$', '^target$', '^__pycache__$', '
 " NERDCommenter
 let g:NERDSpaceDelims = 1
 
-let NERDTreeWinSize = 65
+let NERDTreeWinSize = 40
