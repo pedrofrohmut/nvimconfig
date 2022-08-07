@@ -17,10 +17,10 @@ set colorcolumn=81,121
 set nowrap
 set scrolloff=8
 
-"colorscheme OceanicNext
+colorscheme OceanicNext
 "colorscheme tokyonight
 "colorscheme minimalist
-colorscheme tender
+"colorscheme tender
 
 " Transparency
 hi Normal guibg=NONE ctermbg=NONE

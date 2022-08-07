@@ -20,7 +20,7 @@ nnoremap <silent> <C-S> :wa<CR>
 nnoremap <silent> <C-F> :TagbarOpenAutoClose<CR>
 nnoremap <silent> <C-N> :NERDTreeToggle<CR>
 
-" Closing Characters on enter (CR)
+" Closing Characters on enter (CR) (My Plugin for auto close)
 inoremap (<CR> (<CR>)<Esc>ko
 inoremap [<CR> [<CR>]<Esc>ko
 inoremap {<CR> {<CR>}<Esc>ko
@@ -28,12 +28,18 @@ inoremap ({<CR> ({<CR>})<Esc>ko
 inoremap `<CR> `<CR>`<Esc>ko<Tab>
 inoremap (`<CR> (``)<Esc>hi<CR><Esc>ko<Tab>
 
-" ### BUFFERS ############################################################
+" ### Scrolling ################################################################
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+nnoremap <A-j> <C-e>
+nnoremap <A-k> <C-y>
+
+" ### Buffers ##################################################################
 
 " List buffers
 nnoremap <C-B> :ls<CR>:b<Space>
 
-" ### TABS ###############################################################
+" ### TABS #####################################################################
 
 " New Tab
 nnoremap <silent> <C-T><C-N> :tabnew<CR>
@@ -59,8 +65,3 @@ nnoremap <silent> <Left> :resize -5<CR>
 " Resize Vertical
 nnoremap <silent> <Down> :vertical resize -5<CR>
 nnoremap <silent> <Up> :vertical resize +5<CR>
-
-" Jump to Window Next/Prev
-"nnoremap <C-J> <C-W>w
-"nunmap <C-K>
-"nnoremap <C-K> <C-W>W
