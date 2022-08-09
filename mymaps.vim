@@ -16,7 +16,7 @@ nnoremap <F11> :%s/\s\+$//g
 nnoremap <F12> :source ~/.config/nvim/init.vim<CR>
 
 " Ctrl Utils
-nnoremap <silent> <C-S> :wa<CR>
+nnoremap <C-S> :wa<CR>
 nnoremap <silent> <C-F> :TagbarOpenAutoClose<CR>
 nnoremap <silent> <C-N> :NERDTreeToggle<CR>
 

@@ -96,6 +96,7 @@ nmap <silent> ]g <Plug>(coc-diagnostic-next)
 
 " Hide Popups
 nmap <leader>h <Plug>(coc-float-hide)
+imap <C-h> <Plug>(coc-float-hide)
 
 " Format
 " '<Plug>(coc-format)' keybind set at mymaps.vim

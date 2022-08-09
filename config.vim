@@ -16,6 +16,8 @@ set nohlsearch
 set colorcolumn=81,121
 set nowrap
 set scrolloff=8
+set splitright
+set splitbelow
 
 colorscheme OceanicNext
 "colorscheme tokyonight

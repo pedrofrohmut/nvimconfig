@@ -23,5 +23,8 @@ source $config_path/sneak.vim
 " Svelte
 source $config_path/svelte.vim
 
+" Runner
+source $config_path/runner.vim
+
 " MyMaps For NeoVim
 source $config_path/mymaps.vim
