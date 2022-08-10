@@ -26,7 +26,7 @@ set nowritebackup
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
-set updatetime=500
+set updatetime=1000
 
 " Don't pass messages to |ins-completion-menu|.
 set shortmess+=c
@@ -91,12 +91,12 @@ nmap <silent> gr <Plug>(coc-references)
 
 " Show all diagnostics.
 nmap <silent><nowait> <leader>d :<C-u>CocList diagnostics<CR> 
-nmap <silent> [g <Plug>(coc-diagnostic-prev)
-nmap <silent> ]g <Plug>(coc-diagnostic-next)
+nmap <silent> g[ <Plug>(coc-diagnostic-prev)
+nmap <silent> g] <Plug>(coc-diagnostic-next)
 
 " Hide Popups
 nmap <leader>h <Plug>(coc-float-hide)
-imap <C-h> <Plug>(coc-float-hide)
+imap <C-j> <Esc><Plug>(coc-float-hide)a
 
 " Format
 " '<Plug>(coc-format)' keybind set at mymaps.vim
