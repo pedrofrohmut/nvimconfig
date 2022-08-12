@@ -11,14 +11,12 @@ nnoremap <F4> :bufdo bd
 nnoremap <F5> :CocRestart<CR>
 nnoremap <F6> :CocSearch<Space>
 nnoremap <F7> <Plug>(coc-format)
-nnoremap <F8> :TagbarToggle<CR>
 nnoremap <F11> :%s/\s\+$//g
 nnoremap <F12> :source ~/.config/nvim/init.vim<CR>
 
 " Ctrl Utils
 nnoremap <C-S> :wa<CR>
-nnoremap <silent> <C-F> :TagbarOpenAutoClose<CR>
-nnoremap <silent> <C-N> :NERDTreeToggle<CR>
+nnoremap <silent> <leader>q :NERDTreeToggle<CR>
 
 " Closing Characters on enter (CR) (My Plugin for auto close)
 inoremap (<CR> (<CR>)<Esc>ko
@@ -37,7 +35,7 @@ nnoremap <A-k> <C-y>
 " ### Buffers ##################################################################
 
 " List buffers
-nnoremap <C-B> :ls<CR>:b<Space>
+"nnoremap <C-B> :ls<CR>:b<Space>
 
 " ### TABS #####################################################################
 

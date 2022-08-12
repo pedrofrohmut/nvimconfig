@@ -54,9 +54,6 @@ Plug 'ctrlpvim/ctrlp.vim'
 " NERDTree - File Tree Manager and Viewer
 Plug 'scrooloose/nerdtree'
 
-" Tagbar
-Plug 'preservim/tagbar'
-
 " Git
 Plug 'airblade/vim-gitgutter'
 

@@ -4,20 +4,25 @@ set number
 set relativenumber
 set autoindent
 set expandtab
-set shiftwidth=2
-set softtabstop=2
+set shiftwidth=4
+set softtabstop=4
 set linebreak
 set encoding=utf-8
 set fileformat=unix
 set cmdheight=1
 set mouse=nv
-set signcolumn=yes:1
 set nohlsearch
 set colorcolumn=81,121
 set nowrap
 set scrolloff=8
 set splitright
 set splitbelow
+
+" COC
+set nobackup
+set nowritebackup
+set updatetime=300
+set signcolumn=yes:1
 
 colorscheme OceanicNext
 "colorscheme tokyonight
