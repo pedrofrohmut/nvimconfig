@@ -57,7 +57,7 @@ map("n", "<leader>ss", ":%s/", { noremap = true })
 map("v", "<leader>ss", ":s/", { noremap = true })
 
 -- Remove trailing spaces
-map("n", "<leader>s1", "<cmd>lua require('didorgas.stringFunctions').removeTrailing()<Enter>", options)
+map("n", "<leader>s1", "<cmd>lua require('didorgas.string-functions').remove_trailing()<Enter>", options)
 
 -- ### Plugin: Closing cheracter ###############################################
 map("i", "(<CR>", "(<CR>)<Esc>ko", options)
