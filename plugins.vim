@@ -61,6 +61,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'mhartington/oceanic-next'
 Plug 'jacoborus/tender.vim'
 Plug 'dikiaap/minimalist'
+Plug 'folke/tokyonight.nvim'
 
 " Goyo
 Plug 'junegunn/goyo.vim'

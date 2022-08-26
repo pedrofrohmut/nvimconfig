@@ -1,14 +1,19 @@
-let g:ctrlp_map = '<c-p>'
+let g:ctrlp_map = '<leader>p'
 let g:ctrlp_cmd = 'CtrlP'
 let g:ctrlp_show_hidden = 1
 
-let g:ctrlp_root_markers = ['pom.xml', 'yarn.lock', 'package.json', '**.sln', '.git/']
+"let g:ctrlp_root_markers = ['pom.xml', 'yarn.lock', 'package.json', '**.sln', '.git/']
 
 let g:ctrlp_custom_ignore = {
   \ 'dir':  'node_modules\|deps\|.\.git\|.\.next\|target\|.cache\|.\.dist\|dist\|bin\|obj\|venv\|android\|ios\',
   \ 'file': '\v\.(exe|so|dll|swp|swo)$',
   \ 'link': 'some_bad_symbolic_links',
   \ }
+
+" TESTING
+let g:ctrlp_use_caching = 0
+let g:ctrlp_working_path_mode = 'w'
+let g:ctrlp_lazy_update = 1
 
 " HELP
 "   Press <F5> to purge the cache for the current directory to get new files, remove deleted files and apply new ignore options.

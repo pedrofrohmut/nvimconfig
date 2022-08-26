@@ -63,3 +63,7 @@ nnoremap <silent> <Left> :resize -5<CR>
 " Resize Vertical
 nnoremap <silent> <Down> :vertical resize -5<CR>
 nnoremap <silent> <Up> :vertical resize +5<CR>
+
+" ### COC BUGGED #########################################################
+inoremap <C-n> <C-x><C-n>
+nnoremap <C-p> <C-x><C-p>
