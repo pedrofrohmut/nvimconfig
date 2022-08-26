@@ -1,0 +1,81 @@
+local map = vim.keymap.set
+local options = { noremap = true, silent = true }
+
+-- Mappings --------------------------------------------------------------------
+
+map("n", "<F12>", "<cmd>LspInfo<Enter>", options)
+map("n", "<leader>do", vim.diagnostic.open_float, options)
+map("n", "g[", vim.diagnostic.goto_prev, options)
+map("n", "g]", vim.diagnostic.goto_next, options)
+map("n", "<leader>dl", vim.diagnostic.setloclist, options)
+map("n", "<leader>dd", vim.diagnostic.disable, options)
+map("n", "<leader>de", vim.diagnostic.enable, options)
+
+vim.cmd [[
+    autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})
+]]
+
+-- Config ----------------------------------------------------------------------
+
+vim.diagnostic.config({
+  virtual_text = false,
+  signs = true,
+  underline = true,
+  update_in_insert = false,
+  severity_sort = false,
+})
+
+-- Connect LSP and CMP completion
+local capabilities = require("cmp_nvim_lsp")
+    .update_capabilities(vim.lsp.protocol.make_client_capabilities())
+
+local on_attach = function(client, bufnr)
+    -- Enable completion triggered by <c-x><c-o>
+    vim.api.nvim_buf_set_option(bufnr, "omnifunc", "v:lua.vim.lsp.omnifunc")
+
+    -- Mappings.
+    -- See `:help vim.lsp.*` for documentation on any of the below functions
+    local bufopts = { noremap=true, silent=true, buffer=bufnr }
+    map("n", "gy", vim.lsp.buf.declaration, bufopts)
+    map("n", "gd", vim.lsp.buf.definition, bufopts)
+    map("n", "gi", vim.lsp.buf.implementation, bufopts)
+    map("n", "gt", vim.lsp.buf.type_definition, bufopts)
+    map("n", "gr", vim.lsp.buf.references, bufopts)
+
+    map("n", "K", vim.lsp.buf.hover, bufopts)
+    map("n", "<leader>k", vim.lsp.buf.signature_help, bufopts)
+
+    map("n", "<leader>rn", vim.lsp.buf.rename, bufopts)
+
+    map("n", "<leader>ca", vim.lsp.buf.code_action, bufopts)
+    map("n", "<leader>cf", vim.lsp.buf.formatting, bufopts)
+end
+
+-- Servers ---------------------------------------------------------------------
+
+require('lspconfig')['clangd'].setup {
+    capabilities = capabilities,
+    on_attach = on_attach,
+}
+
+require('lspconfig')['sumneko_lua'].setup {
+    capabilities = capabilities,
+    on_attach = on_attach,
+    settings = {
+        Lua = {
+            diagnostics = {
+                globals = { "vim", "use" }
+            }
+        }
+    }
+}
+
+require('lspconfig')['tsserver'].setup {
+    capabilities = capabilities,
+    on_attach = on_attach,
+}
+
+require('lspconfig')['csharp_ls'].setup {
+    capabilities = capabilities,
+    on_attach = on_attach,
+}
