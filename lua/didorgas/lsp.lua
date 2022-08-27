@@ -11,9 +11,9 @@ map("n", "<leader>dl", vim.diagnostic.setloclist, options)
 map("n", "<leader>dd", vim.diagnostic.disable, options)
 map("n", "<leader>de", vim.diagnostic.enable, options)
 
-vim.cmd [[
-    autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})
-]]
+-- vim.cmd [[
+--     autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})
+-- ]]
 
 -- Config ----------------------------------------------------------------------
 
