@@ -4,16 +4,12 @@ local options = { noremap = true, silent = true }
 -- Mappings --------------------------------------------------------------------
 
 map("n", "<F12>", "<cmd>LspInfo<Enter>", options)
+map("n", "<C-p>", vim.diagnostic.goto_prev, options)
+map("n", "<C-n>", vim.diagnostic.goto_next, options)
 map("n", "<leader>do", vim.diagnostic.open_float, options)
-map("n", "g[", vim.diagnostic.goto_prev, options)
-map("n", "g]", vim.diagnostic.goto_next, options)
 map("n", "<leader>dl", vim.diagnostic.setloclist, options)
 map("n", "<leader>dd", vim.diagnostic.disable, options)
 map("n", "<leader>de", vim.diagnostic.enable, options)
-
--- vim.cmd [[
---     autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})
--- ]]
 
 -- Config ----------------------------------------------------------------------
 
@@ -43,7 +39,6 @@ local on_attach = function(client, bufnr)
     map("n", "gr", vim.lsp.buf.references, bufopts)
 
     map("n", "K", vim.lsp.buf.hover, bufopts)
-    map("n", "<leader>k", vim.lsp.buf.signature_help, bufopts)
 
     map("n", "<leader>rn", vim.lsp.buf.rename, bufopts)
 

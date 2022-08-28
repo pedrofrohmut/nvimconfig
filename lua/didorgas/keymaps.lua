@@ -16,6 +16,7 @@ map("n", "<F1>", ":vertical help ", { noremap = true })
 
 -- File Explorer
 map("n", "<leader>fe", ":Ex<CR>", options)
+map("n", "<leader>fp", ":find ", { noremap = true })
 
 -- Clean Command Message
 map("n", "<C-c>", "<cmd>echo ''<Enter>", options);
@@ -23,10 +24,11 @@ map("n", "<C-c>", "<cmd>echo ''<Enter>", options);
 -- Closer del
 map("i", "<C-l>", "<Del>", options)
 
--- Insert lines in Normal Mode
+-- Insert lines/spaces in Normal Mode
 map("n", "<CR>", "i<CR><Esc>", options)
 map("n", "<A-n>", "o<Esc>k", options)
 map("n", "<A-p>", "O<Esc>j", options)
+map("n", "<C-Space>", "i <Esc>l", options)
 
 -- Scrolling (Needed on Windows/WSL)
 map("n", "<A-j>", "3<C-e>", options)
@@ -35,6 +37,8 @@ map("n", "<A-k>", "3<C-y>", options)
 -- Move Text
 map("v", "<C-j>", ":move '>+1<CR>gv-gv", options)
 map("v", "<C-k>", ":move '<-2<CR>gv-gv", options)
+map("v", ">", ">gv", options)
+map("v", "<", "<gv", options)
 
 -- Easy Register Copy/Cut to x
 map("v", "<A-y>", "\"xy", options)
@@ -47,8 +51,8 @@ map("v", "<leader>sd", "\"+d", options)
 map("n", "<leader>sp", "\"+p", options)
 
 -- Quickfix
-map("n", "<C-n>", "<cmd>cnext<Enter>", options)
-map("n", "<C-p>", "<cmd>cprev<Enter>", options)
+map("n", "<leader>n", "<cmd>cnext<Enter>", options)
+map("n", "<leader>p", "<cmd>cprev<Enter>", options)
 
 -- ### String Utils ###########################################################
 
