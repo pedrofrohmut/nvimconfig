@@ -1,5 +1,5 @@
 local map = vim.keymap.set
-local options = { noremap = true, silent = true }
+local options = { silent = true }
 
 -- Mappings --------------------------------------------------------------------
 
@@ -10,15 +10,16 @@ map("n", "<leader>do", vim.diagnostic.open_float, options)
 map("n", "<leader>dl", vim.diagnostic.setloclist, options)
 map("n", "<leader>dd", vim.diagnostic.disable, options)
 map("n", "<leader>de", vim.diagnostic.enable, options)
+map("n", "<leader>cf", vim.lsp.buf.format)
 
 -- Config ----------------------------------------------------------------------
 
 vim.diagnostic.config({
-  virtual_text = false,
-  signs = true,
-  underline = true,
-  update_in_insert = false,
-  severity_sort = false,
+    virtual_text = false,
+    signs = true,
+    underline = true,
+    update_in_insert = false,
+    severity_sort = false,
 })
 
 -- Connect LSP and CMP completion
@@ -31,7 +32,7 @@ local on_attach = function(client, bufnr)
 
     -- Mappings.
     -- See `:help vim.lsp.*` for documentation on any of the below functions
-    local bufopts = { noremap=true, silent=true, buffer=bufnr }
+    local bufopts = { noremap = true, silent = true, buffer = bufnr }
     map("n", "gy", vim.lsp.buf.declaration, bufopts)
     map("n", "gd", vim.lsp.buf.definition, bufopts)
     map("n", "gi", vim.lsp.buf.implementation, bufopts)
@@ -43,7 +44,6 @@ local on_attach = function(client, bufnr)
     map("n", "<leader>rn", vim.lsp.buf.rename, bufopts)
 
     map("n", "<leader>ca", vim.lsp.buf.code_action, bufopts)
-    map("n", "<leader>cf", vim.lsp.buf.formatting, bufopts)
 end
 
 -- Servers ---------------------------------------------------------------------
