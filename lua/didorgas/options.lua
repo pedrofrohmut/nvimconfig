@@ -26,6 +26,7 @@ local options = {
     number = true,
     relativenumber = true,
     wildmenu = true,
+    laststatus = 3,
 
     -- Behavior
     splitright = true,
