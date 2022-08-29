@@ -17,8 +17,8 @@ map("n", "<F1>", ":vertical help ")
 map("n", "<leader>fe", ":Ex<CR>")
 map("n", "<leader>fp", ":find ")
 
--- Clean Command Message
-map("n", "<C-c>", "<cmd>echo ''<Enter>");
+-- Reset command-line
+map("n", "<C-c>", "<cmd>set cmdheight=1<Enter><cmd>echo ''<Enter>");
 
 -- Closer del
 map("i", "<C-l>", "<Del>")
@@ -30,8 +30,15 @@ map("n", "<A-u>", "O<Esc>j")
 map("n", "<C-Space>", "i <Esc>l")
 
 -- Scrolling (Needed on Windows/WSL)
-map("n", "<A-j>", "5<C-e>")
-map("n", "<A-k>", "5<C-y>")
+map("n", "<C-j>", "6<C-e>")
+map("n", "<C-k>", "6<C-y>")
+map("n", "<C-d>", "<C-d>zz")
+map("n", "<C-u>", "<C-u>zz")
+
+-- Jump cursor to
+map("n", "<A-j>", "6L") -- lastline
+map("n", "<A-k>", "6H") -- firstline
+map("n", "<A-l>", "M") -- middle
 
 -- Move Text
 map("v", "<C-j>", ":move '>+1<CR>gv-gv", { silent = true })
@@ -110,12 +117,12 @@ map("n", "<C-h>", ":tabprevious<CR>", { silent = true })
 -- ### Windows #################################################################
 
 -- Resize Horizontal
-map("n", "<Up>", ":resize +5<CR>", { silent = true })
-map("n", "<Down>", ":resize -5<CR>", { silent = true })
+map("n", "<Up>", "3<C-w>+")
+map("n", "<Down>", "3<C-w>-")
 
 -- Resize Vertical
-map("n", "<Left>", ":vertical resize -5<CR>", { silent = true })
-map("n", "<Right>", ":vertical resize +5<CR>", { silent = true })
+map("n", "<Left>",  "3<C-w>>")
+map("n", "<Right>", "3<C-w><")
 
 -- Splits
 map("n", "<leader>ws", "<C-w>s")
@@ -123,10 +130,6 @@ map("n", "<leader>wv", "<C-w>v")
 
 -- Change current window to a new tab
 map("n", "<leader>wt", "<C-w>T")
-
--- Change/Rotate Focus
-map("n", "<C-j>", "<C-w>w") -- Next
-map("n", "<C-k>", "<C-w>W") -- Prev
 
 -- Closes every other window and every other tab
 map("n", "<leader>wo", "<cmd>tabonly<Enter><cmd>only<Enter>", { silent = true })
