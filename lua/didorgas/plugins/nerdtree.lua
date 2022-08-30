@@ -8,4 +8,4 @@ vim.cmd [[
 vim.cmd [[ let NERDTreeWinSize = 40 ]]
 
 vim.keymap.set("n", "<leader>ft", "<cmd>NERDTreeFind<Enter>")
-vim.keymap.set("n", "<C-q>", "<cmd>NERDTreeToggle<Enter>")
+vim.keymap.set("n", "<C-b>", "<cmd>NERDTreeToggle<Enter>")
