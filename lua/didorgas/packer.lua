@@ -1,9 +1,9 @@
 -- Install packer if not found in the default folder
 local fn = vim.fn
-local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
+local install_path = fn.stdpath("data").."/site/pack/packer/start/packer.nvim"
 if fn.empty(fn.glob(install_path)) > 0 then
     packer_bootstrap = fn.system({
-        'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
+        "git", "clone", "--depth", "1", "https://github.com/wbthomason/packer.nvim", install_path})
     vim.cmd [[packadd packer.nvim]]
 end
 
@@ -31,72 +31,73 @@ packer.init {
     },
 }
 
-return require('packer').startup(function(use)
+return require("packer").startup(function(use)
     -- Packer can manage itself
-    use 'wbthomason/packer.nvim'
+    use "wbthomason/packer.nvim"
 
     -- Completion
-    use 'hrsh7th/cmp-nvim-lsp'
-    use 'hrsh7th/cmp-buffer'
-    use 'hrsh7th/cmp-path'
-    use 'hrsh7th/cmp-cmdline'
-    use 'hrsh7th/nvim-cmp'
+    use "hrsh7th/cmp-nvim-lsp"
+    use "hrsh7th/cmp-buffer"
+    use "hrsh7th/cmp-path"
+    use "hrsh7th/cmp-cmdline"
+    use "hrsh7th/nvim-cmp"
 
     -- Snippets
-    use 'hrsh7th/cmp-vsnip'
-    use 'hrsh7th/vim-vsnip'
-    use 'rafamadriz/friendly-snippets'
+    use "hrsh7th/cmp-vsnip"
+    use "hrsh7th/vim-vsnip"
+    use "rafamadriz/friendly-snippets"
 
     -- LSP neovim lsp and mason for install servers
-    use 'neovim/nvim-lspconfig'
-    use 'williamboman/mason.nvim'
-    use 'williamboman/mason-lspconfig.nvim'
+    use "neovim/nvim-lspconfig"
+    use "williamboman/mason.nvim"
+    use "williamboman/mason-lspconfig.nvim"
+    use "ray-x/lsp_signature.nvim"
 
     -- Telescope
-    use 'nvim-lua/plenary.nvim' -- Required for Telescope
+    use "nvim-lua/plenary.nvim" -- Required for Telescope
     use {
-        'nvim-telescope/telescope.nvim', tag = '0.1.0',
-        requires = { { 'nvim-lua/plenary.nvim' } }
+        "nvim-telescope/telescope.nvim", tag = "0.1.0",
+        requires = { { "nvim-lua/plenary.nvim" } }
     }
-    use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+    use { "nvim-telescope/telescope-fzf-native.nvim", run = "make" }
 
     -- Tree File Explorer
-    use 'preservim/nerdtree'
+    use "preservim/nerdtree"
 
     -- Jump plugin like small version of easy motion
-    use 'justinmk/vim-sneak'
+    use "justinmk/vim-sneak"
 
     -- Emmet - HTML JSX snippets
-    use 'mattn/emmet-vim'
+    use "mattn/emmet-vim"
 
     -- Auto close HTML tags
-    use 'alvan/vim-closetag'
+    use "alvan/vim-closetag"
 
     -- EditorConfig
-    use 'editorconfig/editorconfig-vim'
+    use "editorconfig/editorconfig-vim"
 
     -- Surrounder for Simple Stuff
-    use 'tpope/vim-surround'
+    use "tpope/vim-surround"
 
     -- Dot command now works with some plugins too
-    use 'tpope/vim-repeat'
+    use "tpope/vim-repeat"
 
     -- Commenter
-    use 'tomtom/tcomment_vim'
+    use "tomtom/tcomment_vim"
 
     -- Git gutter
-    use 'airblade/vim-gitgutter'
+    use "airblade/vim-gitgutter"
 
     -- Status Line
-    use 'nvim-lualine/lualine.nvim'
+    use "nvim-lualine/lualine.nvim"
 
     -- Color Schemes
-    use 'mhartington/oceanic-next'
-    use 'jacoborus/tender.vim'
-    use 'dikiaap/minimalist'
-    use 'folke/tokyonight.nvim'
+    use "mhartington/oceanic-next"
+    use "jacoborus/tender.vim"
+    use "folke/tokyonight.nvim"
+    use "sainnhe/sonokai"
 
     if packer_bootstrap then
-        require('packer').sync()
+        require("packer").sync()
     end
 end)

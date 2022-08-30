@@ -1,8 +1,9 @@
-vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<Enter>", {})
-vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<Enter>", {})
-vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<Enter>", {})
-vim.keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<Enter>", {})
-vim.keymap.set("n", "<leader>fd", "<cmd>Telescope diagnostics<Enter>", {})
+vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<Enter>")
+vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<Enter>")
+vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<Enter>")
+vim.keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<Enter>")
+vim.keymap.set("n", "<leader>fd", "<cmd>Telescope diagnostics<Enter>")
+vim.keymap.set("n", "<C-f>", "<cmd>Telescope current_buffer_fuzzy_find<Enter>")
 
 require('telescope').setup({
     defaults = {

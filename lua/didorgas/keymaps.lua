@@ -12,6 +12,7 @@ local map = vim.keymap.set
 
 -- Function Keys
 map("n", "<F1>", ":vertical help ")
+map("n", "<F2>", ":verbose map ")
 
 -- File Explorer
 map("n", "<leader>fe", ":Ex<CR>")

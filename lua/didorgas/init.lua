@@ -8,6 +8,7 @@ require("didorgas.runner")
 -- Plugins
 require("didorgas.plugins.cmp")
 require("didorgas.plugins.emmet")
+require("didorgas.plugins.lsp-signature")
 require("didorgas.plugins.lualine")
 require("didorgas.plugins.mason")
 require("didorgas.plugins.nerdtree")
