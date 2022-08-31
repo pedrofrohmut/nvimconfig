@@ -18,6 +18,10 @@ map("n", "<F2>", ":verbose map ")
 map("n", "<leader>fe", ":Ex<CR>")
 map("n", "<leader>fp", ":find ")
 
+-- Create File
+map("n", "<leader>nf", ":!touch ")
+map("n", "<leader>nd", ":!mkdir -p ")
+
 -- Reset command-line
 map("n", "<C-c>", "<cmd>set cmdheight=1<Enter><cmd>echo ''<Enter>");
 
@@ -58,8 +62,8 @@ map("v", "<leader>sd", "\"+d")
 map("n", "<leader>sp", "\"+p")
 
 -- Quickfix
-map("n", "<leader>n", "<cmd>cnext<Enter>")
-map("n", "<leader>p", "<cmd>cprev<Enter>")
+map("n", "<A-n>", "<cmd>cnext<Enter>")
+map("n", "<A-p>", "<cmd>cprev<Enter>")
 
 -- ### String Utils ###########################################################
 
