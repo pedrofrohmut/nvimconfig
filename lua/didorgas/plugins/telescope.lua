@@ -1,7 +1,23 @@
+local ok, actions = pcall(require, "telescope.actions")
+if not ok then
+    print "Could not require telescope actions. Check the config"
+    return
+end
 
 require('telescope').setup({
     defaults = {
         file_ignore_patterns = { "bin/", "obj/", "node_modules", ".git" },
+        mappings = {
+            i = {
+                ["<C-j>"] = actions.move_selection_next,
+                ["<C-k>"] = actions.move_selection_previous,
+                ["<C-s>"] = actions.file_split,
+                ["<C-v>"] = actions.file_vsplit,
+            },
+            n = {
+                ["<C-s>"] = actions.file_split,
+            }
+        },
     },
     pickers = {
         find_files = {
