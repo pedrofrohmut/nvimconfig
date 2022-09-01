@@ -1,4 +1,4 @@
---[[ 
+--[[
     VIM OPTIONS   :help options
 ]]
 local options = {
@@ -48,6 +48,4 @@ for key, value in pairs(options) do
   vim.opt[key] = value
 end
 
--- Remove auto insert comments next line
-vim.cmd [[ autocmd FileType * setlocal formatoptions-=cro ]]
 vim.cmd [[ set path=$PWD/** ]]

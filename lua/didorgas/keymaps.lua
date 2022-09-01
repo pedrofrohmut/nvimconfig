@@ -65,16 +65,6 @@ map("n", "<leader>sp", "\"+p")
 map("n", "<A-n>", "<cmd>cnext<Enter>")
 map("n", "<A-p>", "<cmd>cprev<Enter>")
 
--- ### String Utils ###########################################################
-
--- Find-Replace
-map("n", "<leader>ss", ":%s/")
-map("v", "<leader>ss", ":s/")
-
--- Remove trailing spaces
-map("n", "<leader>s1",
-    "<cmd>lua require('didorgas.string-functions').remove_trailing()<Enter>")
-
 -- ### Plugin: Closing cheracter ###############################################
 map("i", "(<CR>", "(<CR>)<Esc>ko")
 map("i", "[<CR>", "[<CR>]<Esc>ko")
@@ -138,3 +128,14 @@ map("n", "<leader>wt", "<C-w>T")
 
 -- Closes every other window and every other tab
 map("n", "<leader>wo", "<cmd>tabonly<Enter><cmd>only<Enter>", { silent = true })
+
+-- ### String Utils ###########################################################
+
+-- Find-Replace
+map("n", "<leader>ss", ":%s/")
+map("v", "<leader>ss", ":s/")
+
+local f = require("didorgas.string-functions")
+
+-- Remove trailing spaces
+map("n", "<leader>s1", f.remove_trailing)

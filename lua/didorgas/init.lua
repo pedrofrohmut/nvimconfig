@@ -1,9 +1,11 @@
+require("didorgas.autocmd")
 require("didorgas.colors")
 require("didorgas.keymaps")
 require("didorgas.lsp")
 require("didorgas.options")
 require("didorgas.packer")
 require("didorgas.runner")
+require("didorgas.string-functions")
 
 -- Plugins
 require("didorgas.plugins.cmp")
