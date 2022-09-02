@@ -37,8 +37,9 @@ map("n", "<C-Space>", "i <Esc>l")
 -- Scrolling (Needed on Windows/WSL)
 map("n", "<C-j>", "6<C-e>")
 map("n", "<C-k>", "6<C-y>")
-map("n", "<C-d>", "<C-d>zz")
-map("n", "<C-u>", "<C-u>zz")
+map("n", "<C-i>", "<C-i>zz")
+map("n", "<C-o>", "<C-o>zz")
+map("n", "<C-t>", "<C-t>zz")
 
 -- Jump cursor to
 map("n", "<A-j>", "6L") -- lastline
