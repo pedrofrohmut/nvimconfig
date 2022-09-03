@@ -32,7 +32,6 @@ map("i", "<C-l>", "<Del>")
 map("n", "<CR>", "i<CR><Esc>")
 map("n", "<A-d>", "o<Esc>k")
 map("n", "<A-u>", "O<Esc>j")
-map("n", "<C-Space>", "i <Esc>l")
 
 -- Scrolling (Needed on Windows/WSL)
 map("n", "<C-j>", "6<C-e>")

@@ -2,6 +2,7 @@ local map = vim.keymap.set
 
 -- Mappings --------------------------------------------------------------------
 
+map("n", "<F11>", "<cmd>LspRestart<Enter><cmd>echo 'LSP Restarted'<Enter>")
 map("n", "<F12>", "<cmd>LspInfo<Enter>", { silent = true })
 map("n", "<C-p>", vim.diagnostic.goto_prev, { silent = true })
 map("n", "<C-n>", vim.diagnostic.goto_next, { silent = true })
