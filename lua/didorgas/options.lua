@@ -19,12 +19,10 @@ local options = {
     colorcolumn = { "81", "101" },
     cmdheight = 1,
     termguicolors = true,
-    wrap = false,
     showmode = false,
     number = true,
     relativenumber = true,
     wildmenu = true,
-    laststatus = 3,
 
     -- Behavior
     splitright = true,
@@ -33,6 +31,7 @@ local options = {
     cursorline = true,
     mouse = "a",
     updatetime = 250,
+    wrap = false,
 
     -- Files
     fileformat = "unix",
