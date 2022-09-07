@@ -52,9 +52,10 @@ map("v", ">", ">gv", { silent = true })
 map("v", "<", "<gv", { silent = true })
 
 -- Easy Register Copy/Cut to x
-map("v", "<A-y>", "\"xy")
-map("v", "<A-d>", "\"xd")
-map("n", "<A-p>", "\"xp")
+map({ "n", "i" }, "x", "<Nop>")
+map("v", "xy", "\"xy")
+map("v", "xd", "\"xd")
+map("n", "xp", "\"xp")
 
 -- Easy Register Copy/Cut to/from System Clipboard (:checkhealth if not working)
 map("v", "<leader>sy", "\"+y")
