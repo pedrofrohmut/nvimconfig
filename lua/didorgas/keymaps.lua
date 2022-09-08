@@ -30,8 +30,8 @@ map("i", "<C-l>", "<Del>")
 
 -- Insert lines/spaces in Normal Mode
 map("n", "<CR>", "i<CR><Esc>")
-map("n", "<A-d>", "o<Esc>k")
-map("n", "<A-u>", "O<Esc>j")
+map("n", "<C-j>", "o<Esc>k")
+map("n", "<C-k>", "O<Esc>j")
 
 -- Move Text
 map("v", "<C-j>", ":move '>+1<CR>gv-gv", { silent = true })
@@ -40,10 +40,9 @@ map("v", ">", ">gv", { silent = true })
 map("v", "<", "<gv", { silent = true })
 
 -- Easy Register Copy/Cut to x
-map({ "n", "v" }, "x", "<Nop>")
-map("v", "xy", "\"xy")
-map("v", "xd", "\"xd")
-map("n", "xp", "\"xp")
+map("v", "<leader>xy", "\"xy")
+map("v", "<leader>xd", "\"xd")
+map("n", "<leader>xp", "\"xp")
 
 -- Easy Register Copy/Cut to/from System Clipboard (:checkhealth if not working)
 map("v", "<leader>sy", "\"+y")
@@ -101,14 +100,11 @@ map("n", "<C-h>", ":tabprevious<CR>", { silent = true })
 -- ### Jumping/Scrolling #######################################################
 
 -- Scrolling by
-map("n", "<C-j>", "6<C-e>")
-map("n", "<C-k>", "6<C-y>")
+map("n", "s", "6<C-y>")
+map("n", "x", "6<C-e>")
 
 map("n", "<C-d>", "25<C-e>M")
 map("n", "<C-u>", "25<C-y>M")
-
-map("n", "<C-[>", "50<C-e>M")
-map("n", "<C-]>", "50<C-y>M")
 
 -- Center the screen on file navigation
 map("n", "<C-i>", "<C-i>zz")
