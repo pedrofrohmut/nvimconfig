@@ -40,7 +40,7 @@ map("v", ">", ">gv", { silent = true })
 map("v", "<", "<gv", { silent = true })
 
 -- Easy Register Copy/Cut to x
-map({ "n", "i" }, "x", "<Nop>")
+map({ "n", "v" }, "x", "<Nop>")
 map("v", "xy", "\"xy")
 map("v", "xd", "\"xd")
 map("n", "xp", "\"xp")
@@ -101,8 +101,8 @@ map("n", "<C-h>", ":tabprevious<CR>", { silent = true })
 -- ### Jumping/Scrolling #######################################################
 
 -- Scrolling by
-map("n", "<C-j>", "6<C-e>M")
-map("n", "<C-k>", "6<C-y>M")
+map("n", "<C-j>", "6<C-e>")
+map("n", "<C-k>", "6<C-y>")
 
 map("n", "<C-d>", "25<C-e>M")
 map("n", "<C-u>", "25<C-y>M")
