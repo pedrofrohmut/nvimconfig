@@ -33,18 +33,6 @@ map("n", "<CR>", "i<CR><Esc>")
 map("n", "<A-d>", "o<Esc>k")
 map("n", "<A-u>", "O<Esc>j")
 
--- Scrolling (Needed on Windows/WSL)
-map("n", "<C-j>", "6<C-e>")
-map("n", "<C-k>", "6<C-y>")
-map("n", "<C-i>", "<C-i>zz")
-map("n", "<C-o>", "<C-o>zz")
-map("n", "<C-t>", "<C-t>zz")
-
--- Jump cursor to
-map("n", "<A-j>", "6L") -- lastline
-map("n", "<A-k>", "6H") -- firstline
-map("n", "<A-l>", "M") -- middle
-
 -- Move Text
 map("v", "<C-j>", ":move '>+1<CR>gv-gv", { silent = true })
 map("v", "<C-k>", ":move '<-2<CR>gv-gv", { silent = true })
@@ -109,6 +97,28 @@ map("n", "<leader>tn", ":tabnext<CR>", { silent = true })
 map("n", "<C-l>", ":tabnext<CR>", { silent = true })
 map("n", "<leader>tp", ":tabprevious<CR>", { silent = true })
 map("n", "<C-h>", ":tabprevious<CR>", { silent = true })
+
+-- ### Jumping/Scrolling #######################################################
+
+-- Scrolling by
+map("n", "<C-j>", "6<C-e>M")
+map("n", "<C-k>", "6<C-y>M")
+
+map("n", "<C-d>", "25<C-e>M")
+map("n", "<C-u>", "25<C-y>M")
+
+map("n", "<C-[>", "50<C-e>M")
+map("n", "<C-]>", "50<C-y>M")
+
+-- Center the screen on file navigation
+map("n", "<C-i>", "<C-i>zz")
+map("n", "<C-o>", "<C-o>zz")
+map("n", "<C-t>", "<C-t>zz")
+
+-- Jump cursor to (the number acts like a scrolloff)
+map("n", "<A-j>", "6L") -- lastline
+map("n", "<A-k>", "6H") -- firstline
+map("n", "<A-l>", "M") -- middle
 
 -- ### Windows #################################################################
 
