@@ -37,9 +37,9 @@ local M = {}
 local no_preview = function()
     return require('telescope.themes').get_dropdown({
         borderchars = {
-            { '─', '│', '─', '│', '┌', '┐', '┘', '└'},
-            prompt = {"─", "│", " ", "│", '┌', '┐', "│", "│"},
-            results = {"─", "│", "─", "│", "├", "┤", "┘", "└"},
+                      { '─', '│', '─', '│', '┌', '┐', '┘', '└'},
+            prompt  = {"─",  "│", " ", "│", '┌', '┐', "│", "│"},
+            results = {"─",  "│", "─", "│", "├", "┤", "┘", "└"},
             preview = { '─', '│', '─', '│', '┌', '┐', '┘', '└'},
         },
         width = 0.8,
@@ -57,13 +57,13 @@ M.find_files = function()
 end
 
 
-vim.keymap.set("n", "<C-q>", "<cmd>lua require('didorgas.plugins.telescope').find_files()<Enter>")
+vim.keymap.set("n", "<C-q>",
+    "<cmd>lua require('didorgas.plugins.telescope').find_files()<Enter>")
 vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<Enter>")
 vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<Enter>")
 vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<Enter>")
 vim.keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<Enter>")
 vim.keymap.set("n", "<leader>fd", "<cmd>Telescope diagnostics<Enter>")
--- vim.keymap.set("n", "<C-f>", "<cmd>Telescope current_buffer_fuzzy_find<Enter>")
 vim.keymap.set("n", "<C-f>",
     "<cmd>lua require('didorgas.plugins.telescope').find_in_file()<Enter>")
 

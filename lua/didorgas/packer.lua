@@ -85,6 +85,9 @@ return require("packer").startup(function(use)
     -- Commenter
     use "tomtom/tcomment_vim"
 
+    -- Aligner
+    use 'tommcdo/vim-lion'
+
     -- Git gutter
     use "airblade/vim-gitgutter"
 

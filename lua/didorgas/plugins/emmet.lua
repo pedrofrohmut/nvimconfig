@@ -1,10 +1,11 @@
 -- Emmet Config
-vim.cmd [[ let g:user_emmet_mode='iv' ]]
-vim.cmd [[ let g:user_emmet_leader_key='<c-\>' ]]
-vim.cmd [[ autocmd FileType * EmmetInstall ]]
 
-vim.keymap.set("i", "<C-Space>", "<Plug>(emmet-expand-abbr)", { silent = true })
-vim.keymap.set("v", "<C-Space>", "<Plug>(emmet-wrap-with-abbreviation)", { silent = true })
+vim.g.user_emmet_mode = 'iv'
+vim.g.user_emmet_leader_key = '<c-\\>'
+vim.api.nvim_create_autocmd("FileType", { pattern = "*", command = "EmmetInstall" })
+
+vim.keymap.set("i", "<C-k>", "<Plug>(emmet-expand-abbr)",            { silent = true })
+vim.keymap.set("v", "<C-k>", "<Plug>(emmet-wrap-with-abbreviation)", { silent = true })
 
 --[[
 Main commands

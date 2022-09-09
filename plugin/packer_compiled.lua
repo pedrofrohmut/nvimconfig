@@ -204,6 +204,11 @@ _G.packer_plugins = {
     path = "/home/pedro/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
     url = "https://github.com/airblade/vim-gitgutter"
   },
+  ["vim-lion"] = {
+    loaded = true,
+    path = "/home/pedro/.local/share/nvim/site/pack/packer/start/vim-lion",
+    url = "https://github.com/tommcdo/vim-lion"
+  },
   ["vim-repeat"] = {
     loaded = true,
     path = "/home/pedro/.local/share/nvim/site/pack/packer/start/vim-repeat",

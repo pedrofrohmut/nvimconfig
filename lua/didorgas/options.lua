@@ -3,41 +3,41 @@
 ]]
 local options = {
     -- Indentation and tabing
-    autoindent = true,
+    autoindent  = true,
     smartindent = true,
-    expandtab = true,
-    shiftwidth = 4,
+    expandtab   = true,
+    shiftwidth  = 4,
     softtabstop = 4,
-    tabstop = 4,
+    tabstop     = 4,
 
     -- Searching
     incsearch = true,
-    hlsearch = false,
+    hlsearch  = false,
 
     -- Appearance
-    signcolumn = "yes:1",
-    colorcolumn = { "81", "101" },
-    cmdheight = 1,
-    termguicolors = true,
-    showmode = false,
-    number = true,
+    signcolumn     = "yes:1",
+    colorcolumn    = { "81", "101" },
+    cmdheight      = 1,
+    termguicolors  = true,
+    showmode       = false,
+    number         = true,
     relativenumber = true,
-    wildmenu = true,
+    wildmenu       = true,
 
     -- Behavior
-    splitright = true,
-    splitbelow = true,
+    splitright    = true,
+    splitbelow    = true,
     sidescrolloff = 8,
-    cursorline = true,
-    mouse = "a",
-    updatetime = 250,
-    wrap = false,
+    cursorline    = true,
+    mouse         = "a",
+    updatetime    = 250,
+    wrap          = false,
 
     -- Files
-    fileformat = "unix",
-    backup = false,
+    fileformat  = "unix",
+    backup      = false,
     writebackup = false,
-    autoread = true,
+    autoread    = true,
 
     -- CMP
     completeopt = { "menu", "menuone", "noselect" }

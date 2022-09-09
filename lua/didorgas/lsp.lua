@@ -2,14 +2,14 @@ local map = vim.keymap.set
 
 -- Mappings --------------------------------------------------------------------
 
-map("n", "<F11>", "<cmd>LspRestart<Enter><cmd>echo 'LSP Restarted'<Enter>")
-map("n", "<F12>", "<cmd>LspInfo<Enter>", { silent = true })
-map("n", "<C-p>", vim.diagnostic.goto_prev, { silent = true })
-map("n", "<C-n>", vim.diagnostic.goto_next, { silent = true })
+map("n", "<F11>",      "<cmd>LspRestart<Enter><cmd>echo 'LSP Restarted'<Enter>")
+map("n", "<F12>",      "<cmd>LspInfo<Enter>",     { silent = true })
+map("n", "<C-p>",      vim.diagnostic.goto_prev,  { silent = true })
+map("n", "<C-n>",      vim.diagnostic.goto_next,  { silent = true })
 map("n", "<leader>do", vim.diagnostic.open_float, { silent = true })
 map("n", "<leader>dl", vim.diagnostic.setloclist, { silent = true })
-map("n", "<leader>dd", vim.diagnostic.disable, { silent = true })
-map("n", "<leader>de", vim.diagnostic.enable, { silent = true })
+map("n", "<leader>dd", vim.diagnostic.disable,    { silent = true })
+map("n", "<leader>de", vim.diagnostic.enable,     { silent = true })
 map("n", "<leader>cf", vim.lsp.buf.format)
 
 -- Config ----------------------------------------------------------------------
