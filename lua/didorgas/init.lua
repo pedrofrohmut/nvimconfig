@@ -6,6 +6,7 @@ require("didorgas.options")
 require("didorgas.packer")
 require("didorgas.runner")
 require("didorgas.string-functions")
+require("didorgas.treesitter")
 
 -- Plugins
 require("didorgas.plugins.cmp")

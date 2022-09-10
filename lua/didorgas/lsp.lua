@@ -48,12 +48,26 @@ end
 
 -- Servers ---------------------------------------------------------------------
 
-require('lspconfig')['clangd'].setup {
+local lsp = require "lspconfig"
+
+lsp["clangd"].setup {
     capabilities = capabilities,
     on_attach = on_attach,
 }
 
-require('lspconfig')['sumneko_lua'].setup {
+lsp["csharp_ls"].setup {
+    capabilities = capabilities,
+    on_attach = on_attach,
+}
+
+local path_to_elixirls = vim.fn.expand("~/software/elixir-ls/language_server.sh")
+lsp["elixirls"].setup {
+    cmd = { path_to_elixirls },
+    capabilities = capabilities,
+    on_attach = on_attach,
+}
+
+lsp["sumneko_lua"].setup {
     capabilities = capabilities,
     on_attach = on_attach,
     settings = {
@@ -65,12 +79,7 @@ require('lspconfig')['sumneko_lua'].setup {
     }
 }
 
-require('lspconfig')['tsserver'].setup {
-    capabilities = capabilities,
-    on_attach = on_attach,
-}
-
-require('lspconfig')['csharp_ls'].setup {
+lsp["tsserver"].setup {
     capabilities = capabilities,
     on_attach = on_attach,
 }

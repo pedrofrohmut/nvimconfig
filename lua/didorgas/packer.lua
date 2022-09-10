@@ -53,6 +53,12 @@ return require("packer").startup(function(use)
     use "williamboman/mason-lspconfig.nvim"
     use "ray-x/lsp_signature.nvim"
 
+    -- Treesitter Config
+    use {
+        "nvim-treesitter/nvim-treesitter",
+        run = ":TSUpdate"
+    }
+
     -- Telescope
     use "nvim-lua/plenary.nvim" -- Required for Telescope
     use {
@@ -86,7 +92,7 @@ return require("packer").startup(function(use)
     use "tomtom/tcomment_vim"
 
     -- Aligner
-    use 'tommcdo/vim-lion'
+    use "tommcdo/vim-lion"
 
     -- Git gutter
     use "airblade/vim-gitgutter"
