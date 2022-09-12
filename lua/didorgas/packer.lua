@@ -67,8 +67,10 @@ return require("packer").startup(function(use)
     }
     use { "nvim-telescope/telescope-fzf-native.nvim", run = "make" }
 
-    -- Tree File Explorer
+    -- Language Support
     use "preservim/nerdtree"
+    -- use "elixir-editors/vim-elixir"
+    -- use 'andyl/vim-textobj-elixir'
 
     -- Jump plugin like small version of easy motion
     use "justinmk/vim-sneak"
